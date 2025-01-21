@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Data Analyst</title>
+  
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  
+  <!-- AOS CSS (Animate on Scroll) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="images/profile.jpg" type="image/x-icon" />
+</head>
+<body>
+  <!-- ======= Navbar ======= -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Your Name</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon">&#9776;</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#chart-demo">Chart Demo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <!-- Dark Mode Toggle Button -->
+        <li class="nav-item">
+          <button id="modeToggle" class="btn btn-sm btn-outline-secondary ml-lg-2">
+            Dark Mode
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="vh-100 d-flex align-items-center justify-content-center text-center hero-section" data-aos="fade-in">
+    <div>
+      <h1 class="display-4">Hi, I'm <strong>Your Name</strong></h1>
+      <p class="lead">Data Analyst &amp; Visualization Expert</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- ======= About / Skills Section ======= -->
+  <section id="skills" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="mb-5 text-center section-title">Skills &amp; Technologies</h2>
+      <div class="row">
+        <div class="col-md-4 text-center mb-4">
+          <img src="images/python-icon.png" alt="Python" class="skill-icon"/>
+          <h4 class="mt-3">Python</h4>
+          <p>Proficient with Pandas, NumPy, scikit-learn</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <img src="images/sql-icon.png" alt="SQL" class="skill-icon"/>
+          <h4 class="mt-3">SQL</h4>
+          <p>MySQL, PostgreSQL, Data Modeling</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <img src="images/tableau-icon.png" alt="Tableau/BI" class="skill-icon"/>
+          <h4 class="mt-3">Tableau / Power BI</h4>
+          <p>Interactive dashboards, advanced data visualization</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center mb-4">
+          <img src="images/ml-icon.png" alt="Machine Learning" class="skill-icon"/>
+          <h4 class="mt-3">Machine Learning</h4>
+          <p>Regression, Classification, Clustering</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <img src="images/r-icon.png" alt="R" class="skill-icon"/>
+          <h4 class="mt-3">R</h4>
+          <p>Tidyverse, data wrangling, statistical modeling</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <img src="images/github-icon.png" alt="Git/GitHub" class="skill-icon"/>
+          <h4 class="mt-3">Git &amp; GitHub</h4>
+          <p>Version control, collaboration, CI/CD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Projects Section ======= -->
+  <section id="projects" class="py-5 bg-light" data-aos="fade-left">
+    <div class="container">
+      <h2 class="mb-5 text-center section-title">Featured Projects</h2>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card project-card h-100">
+            <img src="images/project1.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Sales Forecasting</h5>
+              <p class="card-text">
+                Built a time-series model to forecast weekly sales using ARIMA in Python.
+              </p>
+              <p><strong>Technologies:</strong> Python, Pandas, ARIMA</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-secondary">View Details</a>
+              <a href="https://github.com/your-username/sales-forecasting" class="btn btn-outline-secondary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card project-card h-100">
+            <img src="images/project2.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Customer Segmentation</h5>
+              <p class="card-text">
+                Used clustering algorithms to identify customer groups for targeted marketing.
+              </p>
+              <p><strong>Technologies:</strong> R, K-means, Tableau</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-secondary">View Details</a>
+              <a href="https://github.com/your-username/customer-segmentation" class="btn btn-outline-secondary" target="_blank">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <!-- ======= Interactive Chart Demo (Plotly) ======= -->
+  <section id="chart-demo" class="py-5" data-aos="fade-right">
+    <div class="container">
+      <h2 class="mb-5 text-center section-title">Interactive Chart Demo</h2>
+      <div class="text-center">
+        <div id="chartDiv" style="width: 100%; height: 400px;"></div>
+      </div>
+      <p class="text-center mt-3">
+        This is an example Plotly chart embedded in the portfolio to showcase data visualization skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="mb-4 text-center section-title">Get in Touch</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h4>Contact Info</h4>
+          <p>
+            Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br/>
+            LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a><br/>
+            GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a>
+          </p>
+          <p>
+            <strong>Resume/CV:</strong> 
+            <a href="resume.pdf" target="_blank">Download PDF</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4>Send a Message</h4>
+          <!-- Simple contact form using Formspree (or any backend service you prefer) -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="_replyto" required/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+          <!-- Replace YOUR_FORM_ID with your actual Formspree endpoint ID -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer class="text-center py-3">
+    <p class="mb-0">© 2025 Your Name</p>
+  </footer>
+
+  <!-- ======= Scripts ======= -->
+  <!-- jQuery, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  
+  <!-- Plotly for Interactive Charts -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  <!-- AOS JS for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
