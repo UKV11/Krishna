@@ -1,0 +1,136 @@
+/* === Global Styles === */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --section-title-color: #333333;
+  --primary-color: #007bff;
+}
+/* Dark mode variables (will be toggled in JS) */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --section-title-color: #ffffff;
+  --primary-color: #1e90ff;
+}
+
+/* Use CSS variables */
+body,
+.navbar,
+section,
+footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.section-title {
+  color: var(--section-title-color);
+}
+a,
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* === Navbar === */
+.navbar-brand {
+  font-weight: bold;
+}
+.navbar-toggler-icon {
+  color: #000;
+}
+.nav-link {
+  margin-right: 1em;
+}
+
+/* Fix sticky navbar overlap by adding padding-top to body */
+body {
+  padding-top: 56px; /* same height as navbar */
+}
+
+/* === Hero Section === */
+.hero-section {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ), url('images/profile.jpg') center/cover no-repeat;
+  color: #fff;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+/* === Skills Section === */
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* === Projects Section === */
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === Contact Form === */
+.form-control {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* === Footer === */
+footer {
+  background-color: #f8f9fa;
+}
+footer p {
+  margin: 0;
+}
+
+/* === Dark Mode Adjustments === */
+body.dark-mode footer {
+  background-color: #1f1f1f;
+}
+body.dark-mode .navbar-light.bg-light {
+  background-color: #2c2c2c !important;
+  border-bottom: 1px solid #444;
+}
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: #f0f0f0;
+}
+body.dark-mode footer {
+  border-top: 1px solid #444;
+}
