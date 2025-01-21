@@ -5,7 +5,7 @@ AOS.init();
 const modeToggleBtn = document.getElementById('modeToggle');
 modeToggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
-  // Optional: Change button text based on mode
+  // Change button text based on current mode
   if (document.body.classList.contains('dark-mode')) {
     modeToggleBtn.textContent = 'Light Mode';
   } else {
